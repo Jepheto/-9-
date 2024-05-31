@@ -23,6 +23,11 @@ $(TARGET): $(OBJS)
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
+# Back up
+backup:
+	gcc -o ./kernel/20182672/backup ./kernel/20182672/main.c
+	
 # Clean up:
 clean:
+	rm -f ./kernel/20182672/backup
 	rm -f $(OBJS) $(TARGET)
