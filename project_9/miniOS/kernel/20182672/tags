@@ -1,0 +1,64 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BACKUPTIMENODE	filelog.h	/^}BACKUPTIMENODE;$/;"	t	typeref:struct:backuptimenode
+BASIC_DEFS	defs.h	2;"	d
+BUFFER_SIZE	defs.h	8;"	d
+FILELOG	filelog.h	/^}FILELOG;$/;"	t	typeref:struct:filelog
+FILELOG_H	filelog.h	2;"	d
+INITCHECK_H	initcheck.h	2;"	d
+NAME_NODE	queue.h	/^}NAME_NODE;$/;"	t	typeref:struct:name_node
+NAME_QUEUE	queue.h	/^}NAME_QUEUE;$/;"	t	typeref:struct:name_queue
+PATHNAME_SIZE	defs.h	13;"	d
+PATH_H	path.h	2;"	d
+QUEUE_H	queue.h	2;"	d
+TIMESTR_SIZE	defs.h	23;"	d
+backup_deep	backup.h	/^int backup_deep(char* srcDirPath, char* backupDirPath, int cmpflag){$/;"	f
+backup_file	backup.h	/^int backup_file(char* srcFilePath, char* desDirPath, int cmpflag){$/;"	f
+backup_shallow	backup.h	/^int backup_shallow(char* srcDirPath, char* backupDirPath, int cmpflag){$/;"	f
+backuptimenode	filelog.h	/^typedef struct backuptimenode{$/;"	s
+bringFileLog	filelog.h	/^FILELOG* bringFileLog(char* originfilepath){$/;"	f
+changeToAbPath	path.h	/^char* changeToAbPath(char* path){$/;"	f
+checkDirIsEmpty	path.h	/^void checkDirIsEmpty(char* dirPath){$/;"	f
+clearname_queue	queue.h	/^void clearname_queue(NAME_QUEUE* queue){$/;"	f
+closeFileLog	filelog.h	/^int closeFileLog(FILELOG* filelog){$/;"	f
+cmpFile	path.h	/^int cmpFile(char* filepath1,char* filepath2){$/;"	f
+converToFileLogName	path.h	/^char* converToFileLogName(char* abPath){$/;"	f
+convertToAbPath	path.h	/^char* convertToAbPath(char* filelogname){$/;"	f
+copyFile	path.h	/^int copyFile(char* srcPath, char* desPath){$/;"	f
+count	filelog.h	/^    int count;$/;"	m	struct:filelog
+dename_queue	queue.h	/^char* dename_queue(NAME_QUEUE* queue){$/;"	f
+dummyhead	filelog.h	/^    BACKUPTIMENODE dummyhead;$/;"	m	struct:filelog
+dummyhead	queue.h	/^    NAME_NODE dummyhead;$/;"	m	struct:name_queue
+enname_queue	queue.h	/^void enname_queue(NAME_QUEUE* queue, char* name){$/;"	f
+filelog	filelog.h	/^typedef struct filelog{$/;"	s
+filepath	filelog.h	/^    char filepath[PATHNAME_SIZE];$/;"	m	struct:filelog
+getBackupFilePath	path.h	/^char* getBackupFilePath(char* originfilepath, char* backupDirPath){$/;"	f
+getBackupLogsPath	path.h	/^char* getBackupLogsPath(char* originfilepath){$/;"	f
+getFileNameFromAbPath	path.h	/^char* getFileNameFromAbPath(char* abPath){$/;"	f
+getTimeStr	path.h	/^char* getTimeStr(){$/;"	f
+getTimeStrFromLogs	filelog.h	/^char* getTimeStrFromLogs(FILELOG* filelog, int index){$/;"	f
+help	help.h	/^void help(char* opt){$/;"	f
+help_backup	help.h	/^void help_backup(){$/;"	f
+initchecklog	initcheck.h	/^int initchecklog(){$/;"	f
+isNameQueueEmpty	queue.h	/^int isNameQueueEmpty(NAME_QUEUE* queue){$/;"	f
+main	main.c	/^int main(int argc, char* argv[]){$/;"	f
+makeBACKUPTIMENODE	filelog.h	/^BACKUPTIMENODE* makeBACKUPTIMENODE(char* timeStr){$/;"	f
+makeBackupDirPath	path.h	/^char* makeBackupDirPath(char* timeStr){$/;"	f
+makeDirRepeatly	path.h	/^int makeDirRepeatly(char* dirPath){$/;"	f
+name	queue.h	/^    char name[PATHNAME_SIZE];$/;"	m	struct:name_node
+name_node	queue.h	/^typedef struct name_node{$/;"	s
+name_queue	queue.h	/^typedef struct name_queue{$/;"	s
+name_queueInit	queue.h	/^void name_queueInit(NAME_QUEUE* queue){$/;"	f
+next	filelog.h	/^    struct backuptimenode* next;$/;"	m	struct:backuptimenode	typeref:struct:backuptimenode::backuptimenode
+next	queue.h	/^    struct name_node* next;$/;"	m	struct:name_node	typeref:struct:name_node::name_node
+removeBACKUPTIMENODE	filelog.h	/^int removeBACKUPTIMENODE(FILELOG* filelog, char* timeStr){$/;"	f
+saveFileLog	filelog.h	/^int saveFileLog(FILELOG* inmemfilelog){$/;"	f
+showTimeLines	filelog.h	/^void showTimeLines(FILELOG* filelog){$/;"	f
+tail	queue.h	/^    NAME_NODE* tail;$/;"	m	struct:name_queue
+tailptr	filelog.h	/^    BACKUPTIMENODE* tailptr;$/;"	m	struct:filelog
+timeStr	filelog.h	/^    char timeStr[TIMESTR_SIZE];$/;"	m	struct:backuptimenode
+writeFileLog	filelog.h	/^int writeFileLog(char* originfilepath,char* backupDirPath){$/;"	f

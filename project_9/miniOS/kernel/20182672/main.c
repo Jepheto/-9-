@@ -16,6 +16,10 @@
 //
 
 int main(int argc, char* argv[]){
+	/*for(int zz=0;zz<argc;zz++){
+		printf("%s\n",argv[zz]);
+	}*/
+
 	if(argc<2){
 		fprintf(stderr,"error,wrong input\n");
 		printf("%s help : show commands for program",argv[0]);

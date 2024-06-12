@@ -100,13 +100,13 @@ int backup_file(char* srcFilePath, char* desDirPath, int cmpflag){
 
     free(filename);
     
-    char* timeStr=getFileNameFromAbPath(desDirPath);
-        int logfd=initcheck_openbaklog();
-        char logbuf[PATHNAME_SIZE]={0,};
-			sprintf(logbuf,"%s: %s backuped to %s\n",timeStr,srcFilePath,desAbPath);
-			write(logfd,logbuf,PATHNAME_SIZE);
-			close(logfd);
-            free(timeStr);
+    //char* timeStr=getFileNameFromAbPath(desDirPath);
+    //    int logfd=initchecklog()==0?:-1
+    //    char logbuf[PATHNAME_SIZE]={0,};
+	//		sprintf(logbuf,"%s: %s backuped to %s\n",timeStr,srcFilePath,desAbPath);
+	//		write(logfd,logbuf,PATHNAME_SIZE);
+	//		close(logfd);
+         //   free(timeStr);
     return 0;
 }
 
